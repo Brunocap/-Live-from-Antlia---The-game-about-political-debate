@@ -22,12 +22,14 @@ public class CardRotation : MonoBehaviour {
         bool passedThroughTargetCollider = false;
 
         foreach (RaycastHit h in hits)
+        { 
             if (h.collider == col)
             {
                 passedThroughTargetCollider = true;
             }
+        }
         
-    if (passedThroughTargetCollider = showingBack)
+        if (passedThroughTargetCollider != showingBack)
         {
             showingBack = passedThroughTargetCollider;
             if (showingBack)
